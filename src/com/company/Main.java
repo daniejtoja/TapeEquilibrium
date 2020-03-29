@@ -19,14 +19,10 @@ class Solution {
 
             if(i == 0){
 
-                for(int j = 0; j <= i; ++j){
-                    sum1 += A[j];
-                }
-
-
-                for(int k = i+1; k<A.length; ++k){
+                sum1 = A[0];
+                for(int k = 1; k<A.length; ++k)
                     sum2 += A[k];
-                }
+
             } else {
                 sum1 += A[i];
                 sum2 -= A[i];
@@ -49,7 +45,7 @@ class Solution {
         if(a >= 0){
             return a;
         } else {
-            return (-1)*a;
+            return -a;
         }
 
     }
